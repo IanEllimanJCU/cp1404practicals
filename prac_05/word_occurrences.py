@@ -4,11 +4,8 @@ def main():
     user_string = input("Please enter a string ")
     split_user_string = user_string.split()
     split_user_string.sort()
-    print(split_user_string)
-    longest_len_word = 0
+    longest_len_word = max(len(split_user_string) for split_user_string in split_user_string)
     for i in split_user_string:
-        if len(i) > longest_len_word:
-            longest_len_word = len(i)
         if i in count_word_occurences:
             count_word_occurences[i] += 1
         else:
