@@ -1,7 +1,7 @@
 def main():
     count_word_occurences = {}
     user_string = []
-    user_string = input("Please enter a string")
+    user_string = input("Please enter a string ")
     split_user_string = user_string.split()
     split_user_string.sort()
     print(split_user_string)
