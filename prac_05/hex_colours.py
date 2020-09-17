@@ -9,12 +9,9 @@ def main():
     print("and brown")
     colour_choice = input("Please enter your colour choice: ").lower()
     while colour_choice != "":
-        print_colour_code(colour_choice)
+        if colour_choice in COLOUR_CODE:
+            print(COLOUR_CODE[colour_choice])
         colour_choice = input("Please enter your colour choice: ").lower()
     exit()
 
-def print_colour_code(colour_choice):
-    for i in COLOUR_CODE:
-        if colour_choice in i:
-            print(COLOUR_CODE[colour_choice])
 main()
